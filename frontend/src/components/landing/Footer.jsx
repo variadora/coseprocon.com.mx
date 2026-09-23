@@ -11,7 +11,7 @@ export const Footer = () => {
           <div className="md:col-span-5">
             <div className="flex items-center gap-3 mb-5">
               <Logo className="w-11 h-11" light />
-              <span className="font-display font-bold text-2xl tracking-tighter">FRAGUA</span>
+              <span className="font-display font-bold text-2xl tracking-tighter">COSEPROCON</span>
             </div>
             <p className="text-[#F4F4F0]/50 text-sm max-w-xs leading-relaxed">
               Comercializadora de Servicios y Productos para la Construcción, S.A. de C.V.
@@ -32,7 +32,7 @@ export const Footer = () => {
             <p className="font-mono-tech text-[10px] uppercase tracking-[0.2em] text-[#F4F4F0]/40 mb-5">Contacto</p>
             <ul className="space-y-3 text-sm text-[#F4F4F0]/70">
               <li>+52 (55) 4000 1200</li>
-              <li>ventas@fragua.mx</li>
+              <li>ventas@coseprocon.com.mx</li>
               <li>Tlalnepantla, EdoMex</li>
             </ul>
           </div>
@@ -40,7 +40,7 @@ export const Footer = () => {
 
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 pt-8">
           <p className="font-mono-tech text-[10px] uppercase tracking-[0.15em] text-[#F4F4F0]/40">
-            © {year} FRAGUA — Todos los derechos reservados
+            © {year} COSEPROCON — Todos los derechos reservados
           </p>
           <p className="font-mono-tech text-[10px] uppercase tracking-[0.15em] text-[#F4F4F0]/40">
             RFC · CSP-240101-XXX
@@ -49,8 +49,8 @@ export const Footer = () => {
       </div>
 
       <div className="mx-auto max-w-[1600px] px-5 md:px-10 mt-12">
-        <h3 className="font-display font-bold uppercase tracking-tighter text-[15vw] leading-[0.8] text-transparent" style={{ WebkitTextStroke: "1.5px rgba(244,244,240,0.14)" }}>
-          FRAGUA
+        <h3 className="font-display font-bold uppercase tracking-tighter text-[10vw] leading-[0.8] text-transparent whitespace-nowrap" style={{ WebkitTextStroke: "1.5px rgba(244,244,240,0.14)" }}>
+          COSEPROCON
         </h3>
       </div>
     </footer>

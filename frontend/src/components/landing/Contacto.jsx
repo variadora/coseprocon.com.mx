@@ -59,7 +59,7 @@ export const Contacto = () => {
           <div className="space-y-px bg-[#0A0A0A] border border-[#0A0A0A]">
             {[
               { icon: Phone, label: "Ventas mayoreo", value: "+52 (55) 4000 1200" },
-              { icon: Mail, label: "Correo", value: "ventas@fragua.mx" },
+              { icon: Mail, label: "Correo", value: "ventas@coseprocon.com.mx" },
               { icon: MapPin, label: "Centro de distribución", value: "Av. Industria 450, Tlalnepantla, EdoMex" },
             ].map((c) => (
               <div key={c.label} className="bg-[#F4F4F0] flex items-center gap-4 px-5 py-4">

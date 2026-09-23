@@ -40,7 +40,7 @@ export const Navbar = () => {
         <button data-testid="nav-logo" onClick={() => go("inicio")} className="flex items-center gap-3 group">
           <Logo className="w-9 h-9 md:w-10 md:h-10" />
           <div className="leading-none text-left">
-            <span className="font-display font-bold text-lg md:text-xl tracking-tighter block">FRAGUA</span>
+            <span className="font-display font-bold text-lg md:text-xl tracking-tighter block">COSEPROCON</span>
             <span className="font-mono-tech text-[9px] tracking-[0.25em] text-[#4A4A4A] hidden md:block">MATERIALES · MAYOREO</span>
           </div>
         </button>
