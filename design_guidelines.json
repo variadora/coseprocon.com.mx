@@ -1,0 +1,93 @@
+{
+  "theme": "light",
+  "archetype": "Swiss & High-Contrast (Authority, Clarity, Truth) mixed with Industrial Brutalism",
+  "typography": {
+    "headings": {
+      "font": "'Clash Display', sans-serif",
+      "weights": ["600", "700", "800"],
+      "classes": "font-sans tracking-tighter uppercase",
+      "scale": {
+        "h1": "text-5xl sm:text-6xl md:text-7xl lg:text-[7rem] leading-[0.85]",
+        "h2": "text-4xl sm:text-5xl lg:text-6xl leading-[0.9]",
+        "h3": "text-2xl sm:text-3xl lg:text-4xl leading-none",
+        "h4": "text-lg sm:text-xl uppercase tracking-[0.1em]"
+      },
+      "import_url": "@import url('https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap');"
+    },
+    "body": {
+      "font": "'IBM Plex Sans', sans-serif",
+      "weights": ["400", "500"],
+      "classes": "font-sans leading-relaxed tracking-tight",
+      "import_url": "@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap');"
+    }
+  },
+  "colors": {
+    "background": {
+      "primary": "#F4F4F0",
+      "secondary": "#E8E8E4",
+      "accent": "#0A0A0A"
+    },
+    "text": {
+      "primary": "#0A0A0A",
+      "secondary": "#4A4A4A",
+      "inverse": "#F4F4F0"
+    },
+    "brand": {
+      "primary": "#FF3B30",
+      "border": "#0A0A0A",
+      "hover": "#D93025"
+    }
+  },
+  "layouts": {
+    "hero": "Kinetic Hero with large typography. Masked line reveal (framer-motion). Hero overlay must be subtle. Background could be raw concrete texture or solid #F4F4F0 with absolute positioned structural elements.",
+    "services": "Grid-breaking asymmetrical layout. Use bento boxes with 1px solid black borders, sharp corners (rounded-none). No shadows. Heavy use of #0A0A0A background for inverted sections.",
+    "products": "Real product photography spotlighted. Clipped frames, raw unpolished presentation. Grid-cols-1 md:grid-cols-2 lg:grid-cols-4 with gap-px (1px borders).",
+    "contact": "Functional quote form. Minimalist/Technical look. White/Grey inputs with 1px black borders. Very strict, 'blueprint' alignment.",
+    "marquee": "Slow editorial marquee. Massive outline text (text-transparent stroke-black) or solid black text on safety orange background. Text: DISTRIBUCIÓN AL POR MAYOR — ACERO — CEMENTO — AGREGADOS"
+  },
+  "motion": {
+    "scroll": "Lenis for smooth, momentum-based scrolling. Mandatory for premium feel.",
+    "reveal": "Masked line-by-line reveal for hero H1. Use framer-motion overflow-hidden wrappers around text lines and translate them up.",
+    "interactions": "Hover states on buttons and product cards should invert colors (e.g., black to safety orange) or scale slightly. Micro-interactions should feel heavy and mechanical.",
+    "libraries_required": ["framer-motion", "lenis", "react-fast-marquee", "lucide-react"]
+  },
+  "components": {
+    "buttons": "Industrial dictates SHARP corners (rounded-none). 1px border black, solid background, high-contrast text.",
+    "cards": "Bento style. 1px solid borders. No rounded corners. Internal padding massive (p-8 or p-12).",
+    "inputs": "Shadcn components, customized to remove rounded corners. 1px black border. Focus ring should be sharp safety orange."
+  },
+  "images": {
+    "steel_rebar": "https://images.unsplash.com/photo-1530863506128-dc9eb5c3e0fc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHwyfHxzdGVlbCUyMHJlYmFyJTIwY29uc3RydWN0aW9ufGVufDB8fHx8MTc5MDE5NzAwMnww&ixlib=rb-4.1.0&q=85",
+    "concrete_blocks": "https://images.unsplash.com/photo-1565626424178-c699f6601afd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODh8MHwxfHNlYXJjaHwxfHxjb25jcmV0ZSUyMGJsb2NrcyUyMGNlbWVudHxlbnwwfHx8fDE3OTAxOTcwMDJ8MA&ixlib=rb-4.1.0&q=85",
+    "gravel": "https://images.unsplash.com/photo-1657199926989-04cae721c772?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwyfHxncmF2ZWwlMjBhZ2dyZWdhdGVzJTIwdGV4dHVyZXxlbnwwfHx8fDE3OTAxOTcwMDJ8MA&ixlib=rb-4.1.0&q=85",
+    "industrial_site": "https://images.unsplash.com/photo-1609867271967-a82f85c48531?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzl8MHwxfHNlYXJjaHwyfHxpbmR1c3RyaWFsJTIwY29uc3RydWN0aW9uJTIwc2l0ZSUyMG1pbmltYWx8ZW58MHx8fHwxNzkwMTk3MDAyfDA&ixlib=rb-4.1.0&q=85"
+  },
+  "accessibility": {
+    "contrast": "Extremely high contrast. Black text on off-white, or off-white on black. Passes APCA and WCAG AAA.",
+    "testing": "All interactive and key informational elements MUST include a data-testid attribute. e.g., data-testid='contact-submit-button'."
+  },
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "NEVER use generic placeholder text or icons. Use lucide-react or phosphor icons.",
+    "DO NOT use transparent backgrounds for dropdowns or fixed headers where content scrolls underneath. Use backdrop-blur and semi-solid colors.",
+    "Use 2-3x more spacing than default. Layouts must breathe.",
+    "Implement clear visual hierarchy using typography scales and grids, avoiding centered alignments for heavy text blocks.",
+    "You tend to converge toward generic, 'on distribution' outputs. In frontend design, this creates what users call the 'AI slop' aesthetic. Avoid this: make creative, distinctive frontends that surprise and delight.",
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "You MUST NOT apply universal transition. Eg: transition: all. Always add transitions for specific interactive elements.",
+    "You MUST NOT center align the app container, ie do not add .App { text-align: center; } in the css file.",
+    "Always use modern button styles like pill-shaped or sharp button with interaction animations."
+  ],
+  "instructions_to_main_agent": [
+    "Build a single-page landing application with React/Tailwind/Shadcn UI for a wholesale construction distributor.",
+    "Sections requested: Inicio (Home), Servicios (Services), Contacto (Contact).",
+    "Ensure smooth scrolling with lenis (npm install lenis).",
+    "Implement the 'masked line reveal' hero text animation using framer-motion.",
+    "Incorporate a fast-marquee component for the 'DISTRIBUCIÓN AL POR MAYOR...' text.",
+    "Apply 'rounded-none' universally to achieve a brutalist aesthetic. Override Shadcn rounded defaults.",
+    "Create and use an original vector SVG logo (geometric construction shape) as the favicon and main logo.",
+    "Ensure the contact form is completely functional with a simulated submission saving mechanism.",
+    "For .js files, adapt imports and types appropriately since we are not using .tsx files.",
+    "Use Shadcn components for complex interactions but raw HTML/Tailwind for structural, asymmetrical layouts."
+  ]
+}

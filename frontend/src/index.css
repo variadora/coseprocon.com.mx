@@ -1,0 +1,95 @@
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --concrete: #F4F4F0;
+    --concrete-2: #E8E8E4;
+    --ink: #0A0A0A;
+    --ink-soft: #4A4A4A;
+    --safety: #FF3B30;
+    --safety-hover: #D93025;
+}
+
+body {
+    margin: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: var(--concrete);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.font-display {
+    font-family: 'Clash Display', sans-serif;
+}
+
+.font-mono-tech {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+::selection {
+    background: var(--safety);
+    color: var(--concrete);
+}
+
+/* thin scrollbar */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--concrete-2); }
+::-webkit-scrollbar-thumb { background: var(--ink); }
+
+.text-stroke {
+    -webkit-text-stroke: 2px var(--ink);
+    color: transparent;
+}
+
+.text-stroke-light {
+    -webkit-text-stroke: 1.5px var(--concrete);
+    color: transparent;
+}
+
+.grain {
+    position: fixed;
+    inset: 0;
+    z-index: 60;
+    pointer-events: none;
+    opacity: 0.05;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@layer base {
+    :root {
+        --background: 60 20% 95%;
+        --foreground: 0 0% 4%;
+        --card: 60 20% 95%;
+        --card-foreground: 0 0% 4%;
+        --popover: 60 20% 95%;
+        --popover-foreground: 0 0% 4%;
+        --primary: 0 0% 4%;
+        --primary-foreground: 60 20% 95%;
+        --secondary: 60 9% 90%;
+        --secondary-foreground: 0 0% 4%;
+        --muted: 60 9% 90%;
+        --muted-foreground: 0 0% 29%;
+        --accent: 4 100% 59%;
+        --accent-foreground: 60 20% 95%;
+        --destructive: 0 84% 60%;
+        --destructive-foreground: 60 20% 95%;
+        --border: 0 0% 4%;
+        --input: 0 0% 4%;
+        --ring: 4 100% 59%;
+        --radius: 0rem;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+}
